@@ -1,8 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
+@font-face {
+    font-family: 'canter';
+    src: url("Canter/OTF/Canter-Light.otf");
+}
 
 $primary : #F7DAC4;
 $secondary : #C5C0C6;
 $hover : #929BB5;
+
+$font-family : 'canter';
 
 
 .navbar {
@@ -11,6 +17,8 @@ $hover : #929BB5;
 
 .nav-link {
     color: $secondary;
+    font-family: $font-family;
+    font-size: 2em;
 }
 
 .nav-link:hover {
@@ -19,6 +27,8 @@ $hover : #929BB5;
 
 .navbar-brand {
     color: $secondary;
+    font-family: $font-family;
+    font-size: 5em;
 }
 
 .navbar-brand:hover {
@@ -28,4 +38,9 @@ $hover : #929BB5;
 .navbar-toggler-icon {
     border: 2px solid $secondary;
     color: $secondary;
+}
+
+.page-title{
+    font-family: $font-family;
+    font-size: 3em;
 }
